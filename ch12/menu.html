@@ -16,10 +16,11 @@
   }
 
   h1 {
-    font-family: "Marko One", Georgia, serif;
     /*the prefered values for font-size are em, rem, and % */
-    font-size: 1.5em;
-    font-variant: small-caps;
+    /* in font property, the order of the values is important
+    font: style weight stretch variant size/line-height font-family; */
+    font: bold small-caps 1.5em  "Marko One", Georgia, serif;
+
   }
 
   h2 {
@@ -27,6 +28,7 @@
     font-size: 1.2em;
     /* font-weight values: normal | bold | bolder | lighter | 100, 200,....., 900 */
     font-weight: bolder;
+    font-variant-caps: all-small-caps;
   }
 
   var {
@@ -40,7 +42,7 @@
   }
 
   dt {
-    font-weight: bold;
+    font: bold 1em sans-serif;
   }
 
   strong {

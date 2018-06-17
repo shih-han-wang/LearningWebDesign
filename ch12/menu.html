@@ -38,7 +38,8 @@
   p {
     /*the font names contain space must appear within quotation marks*/
     font-family: "Duru Sans", Verdana, sans-serif; /* second & third fonts are back-up */
-    line-height: 1.2em;
+    line-height: 1.2em; /* in this case, 1.2em == 1.2 == 120% */
+    text-indent: 2em; /* the first line of the block*/
   }
 
   dt {
@@ -78,6 +79,11 @@
     font-size: small;
     color: red;
   }
+
+  *{
+    text-shadow: .2em .2em .3em silver;
+  }
+
 </style>
 </head>
 

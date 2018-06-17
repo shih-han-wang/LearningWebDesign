@@ -28,7 +28,6 @@
     font-size: 1.2em;
     /* font-weight values: normal | bold | bolder | lighter | 100, 200,....., 900 */
     font-weight: bolder;
-    font-variant-caps: all-small-caps;
   }
 
   var {
@@ -39,6 +38,7 @@
   p {
     /*the font names contain space must appear within quotation marks*/
     font-family: "Duru Sans", Verdana, sans-serif; /* second & third fonts are back-up */
+    line-height: 1.2em;
   }
 
   dt {
@@ -46,8 +46,37 @@
   }
 
   strong {
-    font-size: larger;
     font-style: italic;
+  }
+
+  dt strong {
+    /* targets only the strong elements within definition list terms */
+    color: rgb(255, 27, 95);
+  }
+
+  #info {
+    color: teal;
+  }
+
+  #info p {
+    font-style: italic;
+  }
+
+  .price {
+    font-family: Georgia, serif;
+    font-size: italic;
+    color: gray;
+  }
+
+  .label {
+    font-weight: bold;
+    font-variant: small-caps;
+    font-style: normal;
+  }
+
+  p.warning, sup {
+    font-size: small;
+    color: red;
   }
 </style>
 </head>
@@ -58,7 +87,7 @@
 <h1>Black Goose Bistro &bull; Summer Menu</h1>
 
 <p>Baker's Corner, Seekonk, Massachusetts<br>
-<span class="label">Hours: Monday through Thursday:</span> 11 to 9, <span class="label">Friday and Saturday;</span> 11 to midnight</p>
+<span class="label">Hours: Monday through Thursday:</span> 11 to 9, <span class="label">Friday and Saturday:</span> 11 to midnight</p>
 </div>
 
 <div id="appetizers">

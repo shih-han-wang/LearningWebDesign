@@ -12,7 +12,9 @@
 
   body {
     /*All font names must be capitalized (except the generic font families)*/
-    font-family: Verdana, sans-serif;
+    font-family: Georgia, serif;
+    font-size: small;
+    line-height: 1.75em;
   }
 
   h1 {
@@ -20,30 +22,42 @@
     /* in font property, the order of the values is important
     font: style weight stretch variant size/line-height font-family; */
     font: bold small-caps 1.5em  "Marko One", Georgia, serif;
+    color: rgb(94, 2, 144);
+    text-shadow: .05em .05em .1em lightslategray;
 
+  }
+
+  #info p {
+    font-style: italic;
+    color: gray;
+  }
+
+  h1, h2, #info {
+    text-align: center;
   }
 
   h2 {
     /* font-family: "Apple chancery", Georgia, serif; */
     font-size: 1.2em;
-    /* font-weight values: normal | bold | bolder | lighter | 100, 200,....., 900 */
-    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: .5em; /* === 0.5em */
+    color: rgb(111, 86, 129);
   }
 
-  var {
-    /* use commas to separate multiple font names*/
-    font-family: Courier, monospace;
+  h2 + p { /* next-sibling selector (those paragraphs right after the h2 headings) */
+    text-align: center;
+    font-style: italic;
+  }
+
+  dt {
+    font-weight: bold;
+    color: rgb(127, 55, 157);
   }
 
   p {
     /*the font names contain space must appear within quotation marks*/
     font-family: "Duru Sans", Verdana, sans-serif; /* second & third fonts are back-up */
     line-height: 1.2em; /* in this case, 1.2em == 1.2 == 120% */
-    text-indent: 2em; /* the first line of the block*/
-  }
-
-  dt {
-    font: bold 1em sans-serif;
   }
 
   strong {
@@ -55,9 +69,6 @@
     color: rgb(255, 27, 95);
   }
 
-  #info {
-    color: teal;
-  }
 
   #info p {
     font-style: italic;
@@ -78,10 +89,6 @@
   p.warning, sup {
     font-size: small;
     color: red;
-  }
-
-  *{
-    text-shadow: .2em .2em .3em silver;
   }
 
 </style>

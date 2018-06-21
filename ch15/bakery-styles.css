@@ -121,6 +121,13 @@ footer {
   font-size: .8em;
   padding: 1em;
 }
+
+#award{
+  position: absolute;
+  top: 30px;
+  left: 50px;
+}
+
 h2 {
   font-family: 'Stint Ultra Expanded', Geprgia, serif;
 }

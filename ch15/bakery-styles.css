@@ -96,6 +96,13 @@ main img {
 
 img[src*="muffin"] {
   margin-left: 50px;
+  -webkit-shape-outside: circle(110px);
+  shape-outside: circle(110px);
+}
+
+img[src*="bread"] {
+  -webkit-shape-outside: ellipse(130px 95px at 50% 50%);
+  shape-outside: ellipse(130px 95px at 50% 50%);
 }
 
 /* aside "hours" styles */

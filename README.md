@@ -14,13 +14,9 @@ By **Jennifer Robbins**
  - Chapter 13
    - Colors and Backgrounds
  - Chapter 14
-   - Thinking Inside the Box   
-#### Work in progress
-
-- Chapter 15
+   - Thinking Inside the Box  
+ - Chapter 15
    - Floating and Positioning
-
-#### Backlog
-
+#### Work in progress
 - Chapter 16
    - CSS Layout with Flexbox and Grid

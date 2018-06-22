@@ -38,6 +38,7 @@ section {
   width: 240px;
   display: flex;
   flex-direction: column;
+  flex: auto;
 }
 .title {
   background-color: #783F27;
@@ -51,6 +52,12 @@ section {
   width: 100%;
   text-align: center;
   margin-top: auto;
+}
+.photo {
+  order: -1;
+}
+img {
+  width: 100%;
 }
 </style>
 
@@ -100,7 +107,7 @@ section {
 <section class="dish">
 <h2>6<br>Pasta Puttanesca</h2>
 <p class="info">A rich tomato sauce simmered with garlic, olives, capers, anchovies, and plenty of hot red pepper flakes.</p>
-<p class="photo"><img src="table.jpg" width="200" height="100" alt=""></p>
+<p class="photo"><img src="table.jpg" alt=""></p>
 <p class="price">$12.95</p>
 </section>
 

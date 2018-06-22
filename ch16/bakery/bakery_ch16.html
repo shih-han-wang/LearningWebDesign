@@ -36,7 +36,7 @@ a {
 header {
   color: white;
   background:  url(images/croissants_banner.jpg) no-repeat center center;
-  background-size: cover; 
+  background-size: cover;
   text-align: center;
   height: 15em;
 }
@@ -63,11 +63,22 @@ nav ul li a:focus, nav ul li a:hover, nav ul li a:active {
 }
 nav ul {
   margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
 }
 nav ul li {
   font-size: .8em;
   text-transform: uppercase;
   letter-spacing: .2em;
+}
+nav ul li a {
+  display: block;
+  border: 1px solid;
+  border-radius: .5em;
+  padding: .5em 1em;
+  margin: .5em;
 }
 
 /* main "products" styles */
@@ -92,7 +103,7 @@ h3 {
 }
 p.more {
   font-family: verdana, sans-serif;
-  text-transform: uppercase; 
+  text-transform: uppercase;
   font-size: .8em;
   clear: left;
 }
@@ -103,15 +114,15 @@ main img {
 
 img[src*="muffin"] {
   margin-left: 50px;
-  -webkit-shape-outside: url(images/muffin.png);  
-  shape-outside: url(images/muffin.png);  
-  -webkit-shape-margin: 1em; 
+  -webkit-shape-outside: url(images/muffin.png);
+  shape-outside: url(images/muffin.png);
+  -webkit-shape-margin: 1em;
   shape-margin: 1em;
 }
 img[src*="bread"] {
-  -webkit-shape-outside: url(images/bread.png);  
-  shape-outside: url(images/bread.png);    
-  -webkit-shape-margin: 1em; 
+  -webkit-shape-outside: url(images/bread.png);
+  shape-outside: url(images/bread.png);
+  -webkit-shape-margin: 1em;
   shape-margin: 1em;
 }
 
@@ -133,9 +144,9 @@ footer {
 	font-size: .8em;
 	padding: 1em;
 }
-#award { 	
-  position: fixed; 	
-  top: 30px; 	
+#award {
+  position: fixed;
+  top: 30px;
   left: 50px;
 }
 h2 {
@@ -160,7 +171,7 @@ h2 {
       <li><a href="">About</a></li>
       <li><a href="">Contact</a></li>
     </ul>
-  </nav>  
+  </nav>
   <h1><img src="images/bgb_logo.png" alt="Black Goose Bakery"></h1>
   <p>The delicious baked goods you love at Black Goose Bistro...now available to go!</p>
 </header>
@@ -189,9 +200,9 @@ h2 {
 
 <footer>
 <p>All content copyright &copy; 2017, Black Goose Bistro.</p>
-  <div id="award"> 
-    <img src="images/award.png" alt="Farmers' Market Award"> 
-  </div> 
+  <div id="award">
+    <img src="images/award.png" alt="Farmers' Market Award">
+  </div>
 </footer>
 
 

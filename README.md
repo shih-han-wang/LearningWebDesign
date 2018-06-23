@@ -17,6 +17,5 @@ By **Jennifer Robbins**
    - Thinking Inside the Box  
  - Chapter 15
    - Floating and Positioning
-#### Work in progress
-- Chapter 16
+ - Chapter 16
    - CSS Layout with Flexbox and Grid

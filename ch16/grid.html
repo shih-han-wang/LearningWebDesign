@@ -13,7 +13,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  font-family: Georgia, serif; 
+  font-family: Georgia, serif;
   font-size: 100%;
   background-color: white;
   margin: 0;
@@ -23,7 +23,9 @@ body {
 #layout {
   margin-left: 5%;
   margin-right: 5%;
-	
+  display: grid;
+  grid-template-rows: 3em 20px [main-start] 150px 300px 5em [main-end];
+  grid-template-columns: [main-start] 1fr [main-end] repeat(3, 20px 150px);
 }
 
 
@@ -70,7 +72,7 @@ nav ul li a {
   border: 1px solid;
   border-radius: .5em;
   padding: .5em 1em;
-  margin: .5em; 
+  margin: .5em;
 }
 
 
@@ -114,7 +116,7 @@ footer {
     <li><a href="">About</a></li>
     <li><a href="">Contact</a></li>
   </ul>
-</nav>  
+</nav>
 
 <main>
   <h2>Introducing: Breads of the World!</h2>
@@ -128,9 +130,9 @@ footer {
 -->
 </main>
 
-<figure id="figA"><img src="images/uzbek_150.jpg"></figure>
-<figure id="figB"><img src="images/bread_150.jpg"></figure>
-<figure id="figC"><img src="images/braided_150.jpg"></figure>
+<figure id="figA"><img src="bakery/images/uzbek_150.jpg"></figure>
+<figure id="figB"><img src="bakery/images/bread_150.jpg"></figure>
+<figure id="figC"><img src="bakery/images/braided_150.jpg"></figure>
 
 <footer>
   <p><strong>Black Goose Bakery</strong> | Seekonk, MA <br>
@@ -140,5 +142,3 @@ Monday &ndash; Friday: 5am to 3pm | Saturday &amp; Sunday: 6am to 4pm</p>
 </div>
 </body>
 </html>
-
-
